@@ -1,6 +1,6 @@
 
 
-# Penghitung Umur
+# Aplikasi Penghitung Umur
 
 Aplikasi ini adalah program Java yang menghitung umur seseorang berdasarkan tanggal lahir yang dipilih. Selain menghitung umur, aplikasi ini juga menampilkan hari ulang tahun berikutnya dan peristiwa penting yang terjadi pada tanggal ulang tahun tersebut. 
 
