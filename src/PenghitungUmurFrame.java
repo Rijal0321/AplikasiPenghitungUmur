@@ -27,7 +27,7 @@ public class PenghitungUmurFrame extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        DateChooserTanggalLahir = new com.toedter.calendar.JDateChooser();
+        dateChooserTanggalLahir = new com.toedter.calendar.JDateChooser();
         txtUmur = new javax.swing.JTextField();
         txtHariUlangTahunBerikutnya = new javax.swing.JTextField();
         btnHitung = new javax.swing.JButton();
@@ -52,9 +52,9 @@ public class PenghitungUmurFrame extends javax.swing.JFrame {
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel3.setText("Hari Ulang tahun Berikutnya");
 
-        DateChooserTanggalLahir.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+        dateChooserTanggalLahir.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
             public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                DateChooserTanggalLahirPropertyChange(evt);
+                dateChooserTanggalLahirPropertyChange(evt);
             }
         });
 
@@ -88,7 +88,7 @@ public class PenghitungUmurFrame extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(txtUmur)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(DateChooserTanggalLahir, javax.swing.GroupLayout.DEFAULT_SIZE, 165, Short.MAX_VALUE)
+                        .addComponent(dateChooserTanggalLahir, javax.swing.GroupLayout.DEFAULT_SIZE, 165, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
                         .addComponent(btnHitung)
                         .addGap(18, 18, 18)
@@ -102,7 +102,7 @@ public class PenghitungUmurFrame extends javax.swing.JFrame {
                 .addGap(17, 17, 17)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
-                    .addComponent(DateChooserTanggalLahir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(dateChooserTanggalLahir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(btnHitung)
                         .addComponent(btnKeluar)))
@@ -119,7 +119,7 @@ public class PenghitungUmurFrame extends javax.swing.JFrame {
                 .addContainerGap(35, Short.MAX_VALUE))
         );
 
-        jPanel2.setLayout(new java.awt.GridLayout());
+        jPanel2.setLayout(new java.awt.GridLayout(1, 0));
 
         txtAreaPeristiwa.setColumns(20);
         txtAreaPeristiwa.setRows(20);
@@ -152,7 +152,7 @@ public class PenghitungUmurFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     
     private void btnHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHitungActionPerformed
-    Date tanggalLahir = DateChooserTanggalLahir.getDate();
+    Date tanggalLahir = dateChooserTanggalLahir.getDate();
     if (tanggalLahir != null) {
         // Menghitung umur dan hari ulang tahun berikutnya
         LocalDate lahir = tanggalLahir.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
@@ -201,7 +201,7 @@ public class PenghitungUmurFrame extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_btnKeluarActionPerformed
 
-    private void DateChooserTanggalLahirPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_DateChooserTanggalLahirPropertyChange
+    private void dateChooserTanggalLahirPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_dateChooserTanggalLahirPropertyChange
         txtUmur.setText("");
         txtHariUlangTahunBerikutnya.setText("");
         
@@ -212,7 +212,7 @@ public class PenghitungUmurFrame extends javax.swing.JFrame {
         }
         txtAreaPeristiwa.setText("");
                 
-    }//GEN-LAST:event_DateChooserTanggalLahirPropertyChange
+    }//GEN-LAST:event_dateChooserTanggalLahirPropertyChange
 
     /**
      * @param args the command line arguments
@@ -250,9 +250,9 @@ public class PenghitungUmurFrame extends javax.swing.JFrame {
 }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.toedter.calendar.JDateChooser DateChooserTanggalLahir;
     private javax.swing.JButton btnHitung;
     private javax.swing.JButton btnKeluar;
+    private com.toedter.calendar.JDateChooser dateChooserTanggalLahir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
