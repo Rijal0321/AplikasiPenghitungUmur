@@ -52,4 +52,4 @@ Proyek ini terdiri dari dua kelas utama:
 ![App Screenshot](https://github.com/Rijal0321/AplikasiPenghitungUmur/commit/d334f2176d6c076b16269f2c067a369b26b2f9bd)
 
 ## Di Buat Oleh
- Latihan 2 - Muhammad Rijal Aditya (2210010148)
+ Latihan 2 - Muhammad Rijal Aditya (2210010148) - Kelas 5C Reguler pagi Banjarmasin
