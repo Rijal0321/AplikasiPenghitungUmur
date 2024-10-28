@@ -47,9 +47,10 @@ Proyek ini terdiri dari dua kelas utama:
 4. Untuk keluar dari aplikasi, klik tombol **Keluar**.
 
 
-## Demo GIF
+## Demo
 
-![App Screenshot](img/Latihan 2 Demo.gif)
+![App Screenshot](https://github.com/Rijal0321/AplikasiPenghitungUmur/blob/main/img/Latihan%202%20Demo.gif)
 
-## Di Buat Oleh
- Latihan 2 - Muhammad Rijal Aditya (2210010148) - Kelas 5C Reguler pagi Banjarmasin
+## Pembuat
+Latihan 2 - Muhammad Rijal Aditya (2210010148) - Kelas 5C Reguler pagi Banjarmasin
+
